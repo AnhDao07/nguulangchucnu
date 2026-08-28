@@ -5,29 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gửi Mua Hàng</title>
     <link rel="stylesheet" href="../CSS/1.css">
-    <style>
-        table {
-            margin: 0 auto;
-            text-align: left;
-            border: 2px solid #ccc;
-            background-color: #fff;
-            width: 550px;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        table tr td {
-            padding: 10px;
-        }
-        table input[type="text"],
-        table input[type="email"],
-        table select,
-        table textarea {
-            width: 100%;
-            padding: 6px;
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 <body>
 
@@ -41,7 +18,7 @@
         </div>
     </header>
 
-    <nav>
+<nav>
         <ul>
             <li><a href="../index.html">Trang Chủ</a></li>
             <li><a href="sutich.html" target="_blank">Sự Tích</a></li>
@@ -50,44 +27,40 @@
             <li><a href="lienhe.html" target="_blank" class="active">Mua Hàng</a></li>
         </ul>
     </nav>
-
     <main class="container">
-        <section class="content1">
-            <h2 class="tieude" style="text-align: center; margin-bottom: 20px;">Thông tin mua hàng</h2>
+        <section class="content1 khungform">
+            <h2 class="tieude">Thông tin mua hàng</h2>
             <form action="#" method="post">
-                <table>
-                    <tr>
-                        <td>Họ và Tên:</td>
-                        <td><input type="text" name="hoten" placeholder="Nhập tên của bạn..." required size="25"></td>
-                    </tr>
-                    <tr>
-                        <td>Địa chỉ Email:</td>
-                        <td><input type="email" name="email" placeholder="email@gmail.com" required size="25"></td>
-                    </tr>
-                    <tr>
-                        <td>Món muốn mua:</td>
-                        <td>
-                            <select name="muahang">
-                                <option value="1">Chè Đậu Đỏ Nước Cốt Dừa - 25.000 VNĐ</option>
-                                <option value="2">Truyện: Ngưu Lang Chức Nữ - 16.000 VNĐ</option>
-                                <option value="3">Vòng Đeo Tay - 49.000 VNĐ</option>
-                                <option value="4">Bánh Nhân Đậu Đỏ - 60.000 VNĐ</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nhập địa chỉ:</td>
-                        <td><textarea name="noidung" rows="4" cols="25" placeholder="Vui lòng nhập địa chỉ của bạn."></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: center;">
-                            <input type="button" value="ĐẶT HÀNG" class="nutgui" onclick="alert('CẢM ƠN BẠN ĐÃ MUA ỦNG HỘ SẢN PHẨM')" style="padding: 10px 20px; cursor: pointer;">
-                        </td>
-                    </tr>
-                </table>
+                <div class="form1">
+                    <label for="hoten">Họ và Tên:</label>
+                    <input type="text" id="hoten" name="hoten" placeholder="Nhập tên của bạn..." required>
+                </div>
+
+                <div class="form1">
+                    <label for="email">Địa chỉ Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                </div>
+
+                <div class="form1">
+                    <label for="muahang">Món muốn mua:</label>
+                    <select id="muahang" name="muahang">
+                        <option value="1">Chè Đậu Đỏ Nước Cốt Dừa</option>
+                        <option value="2">Truyện: Ngưu Lang Chức Nữ</option>
+                        <option value="3">Vòng Đeo Tay</option>
+                        <option value="4">Bánh Nhân Đậu Đỏ</option>
+                    </select>
+                </div>
+
+                <div class="form1">
+                    <label for="noidung">Nhập địa chỉ:</label>
+                    <textarea id="noidung" name="noidung" rows="4" placeholder="Vui lòng nhập địa chỉ của bạn."></textarea>
+                </div>
+
+                <button type="submit" class="nutgui">Đặt Hàng</button>
             </form>
         </section>
     </main>
+
 
     <footer>
         <div class="container">
