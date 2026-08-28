@@ -250,13 +250,20 @@ footer {
 }
 
 .footer1 {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .footer1 h3 {
     color: #ffb3c1;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer1 p {
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 .quyenhan {
